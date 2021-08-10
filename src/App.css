@@ -23,7 +23,11 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+Form {
+  margin: 5% 25%;
+}
+Carousel img {
+}
 .App-link {
   color: #61dafb;
 }
