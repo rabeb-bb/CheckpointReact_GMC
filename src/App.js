@@ -1,7 +1,7 @@
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import {Navbar, Container, Nav, NavDropdown, Form, Button, Carousel, Card} from "react-bootstrap"
+import {Navbar, Container, Nav,Row, Col, NavDropdown, Form, Button, Carousel, Card, ListGroup} from "react-bootstrap"
 function App() {
   return (
     <div className="App">
@@ -64,41 +64,92 @@ function App() {
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel> 
-  <Form>
-    <h2>Sign up</h2>
-    <h6>or <a href=''>Sign in</a></h6>
-  <Form.Group className="mb-3" controlId="formBasicEmail">
-    <Form.Label>Email address</Form.Label>
-    <Form.Control type="email" placeholder="Enter email" />
-    <Form.Text className="text-muted">
-      We'll never share your email with anyone else.
-    </Form.Text>
-  </Form.Group>
+  
+    <Form>
+      <h2>Sign up</h2>
+      <h6>or <a href=''>Sign in</a></h6>
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Label>Email address</Form.Label>
+        <Form.Control type="email" placeholder="Enter email" />
+          <Form.Text className="text-muted">
+            We'll never share your email with anyone else.
+        </Form.Text>
+      </Form.Group>
 
-  <Form.Group className="mb-3" controlId="formBasicPassword">
-    <Form.Label>Password</Form.Label>
-    <Form.Control type="password" placeholder="Password" />
-  </Form.Group>
-  <Form.Group className="mb-3" controlId="formBasicCheckbox">
-    <Form.Check type="checkbox" label="Check me out" />
-  </Form.Group>
-  <Button variant="primary" type="submit">
-    Submit
-  </Button>
-</Form>
-<Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" src="https://img1.od-cdn.com/ImageType-400/5054-1/3AD/B16/B9/%7B3ADB16B9-E0CE-48E7-9C94-F55571274428%7DImg400.jpg" />
-  <Card.Body>
-    <Card.Title>Book ofthe month</Card.Title>
-    <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </Card.Text>
-    <Button variant="primary">Shelf it</Button>
-  </Card.Body>
-</Card>
-
-    
+      <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Label>Password</Form.Label>
+        <Form.Control type="password" placeholder="Password" />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="formBasicCheckbox">
+       <Form.Check type="checkbox" label="Check me out" />
+      </Form.Group>
+      <Button variant="primary" type="submit">
+        Submit
+      </Button>
+    </Form>
+<Container>
+<Row style={{ margin: '5% 10%' }}>
+    <Col sm>
+    <Card style={{ width: '18rem' }}>
+        <Card.Img variant="top" src="https://img1.od-cdn.com/ImageType-400/5054-1/3AD/B16/B9/%7B3ADB16B9-E0CE-48E7-9C94-F55571274428%7DImg400.jpg" />
+        <Card.Body>
+          <Card.Title>Book ofthe month</Card.Title>
+          <Card.Text>
+            Some quick example text to build on the card title and make up the bulk of
+            the card's content.
+          </Card.Text>
+          <Button variant="primary">Shelf it</Button>
+        </Card.Body>
+      </Card>
+    </Col>
+    <Col sm>
+    <Card style={{ width: '18rem' }}>
+        <Card.Img variant="top" src="https://img1.od-cdn.com/ImageType-400/5054-1/3AD/B16/B9/%7B3ADB16B9-E0CE-48E7-9C94-F55571274428%7DImg400.jpg" />
+        <Card.Body>
+          <Card.Title>Book ofthe month</Card.Title>
+          <Card.Text>
+            Some quick example text to build on the card title and make up the bulk of
+            the card's content.
+          </Card.Text>
+          <Button variant="primary">Shelf it</Button>
+        </Card.Body>
+      </Card>
+    </Col>
+    <Col sm><Card style={{ width: '18rem' }}>
+        <Card.Img variant="top" src="https://img1.od-cdn.com/ImageType-400/5054-1/3AD/B16/B9/%7B3ADB16B9-E0CE-48E7-9C94-F55571274428%7DImg400.jpg" />
+        <Card.Body>
+          <Card.Title>Book ofthe month</Card.Title>
+          <Card.Text>
+            Some quick example text to build on the card title and make up the bulk of
+            the card's content.
+          </Card.Text>
+          <Button variant="primary">Shelf it</Button>
+        </Card.Body>
+      </Card></Col>
+  </Row>
+  <Row style={{ backgroundColor: '#d1d1d1', margin: '0%' }}>
+    <Col sm style={{ margin: '5%' }}>
+      <img src='https://www.graphicsprings.com/filestorage/stencils/c4a7967fc5cc7de14bf88688831986fc.png?width=500&height=500' style={{ width: '175px' }}></img>
+    </Col>
+    <Col sm style={{ margin: '5%' }}>
+    <ListGroup variant="flush">
+      <ListGroup.Item>Home</ListGroup.Item>
+      <ListGroup.Item>Authors</ListGroup.Item>
+      <ListGroup.Item>Lists</ListGroup.Item>
+      <ListGroup.Item>Contact</ListGroup.Item>
+    </ListGroup>
+    </Col>
+    <Col sm style={{ margin: '5%' }}>
+    <ListGroup variant="flush">
+      <ListGroup.Item>Facebook</ListGroup.Item>
+      <ListGroup.Item>Instagram</ListGroup.Item>
+      <ListGroup.Item>Twiter</ListGroup.Item>
+      <ListGroup.Item>Youtube</ListGroup.Item>
+    </ListGroup>
+    </Col>
+  </Row>
+</Container>
+      
     
     </div>
   );

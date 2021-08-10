@@ -26,7 +26,8 @@
 Form {
   margin: 5% 25%;
 }
-Carousel img {
+Col {
+  margin: 5%;
 }
 .App-link {
   color: #61dafb;
